@@ -39,7 +39,7 @@
         </div>
         <!-- the container of buttons -->
         <div class="space-x-5 hidden lg:block">
-            <button class="btn btn-soft px-6 py-3 bg-[#41ff6b1a] rounded-[50px] font-black text-[16px] ">0 <img src="./assets/heart.png" alt="heart" class="w-6"></button>
+            <button class="btn btn-soft px-6 py-3 bg-[#41ff6b1a] rounded-[50px] font-black text-[16px] "><span id="heart-count">0</span> <img id="nav-heart" src="./assets/heart.png" alt="heart" class="w-6"></button>
 
             <button class="btn btn-soft px-6 py-3 bg-[#41ff6b1a] rounded-[50px] font-black text-[16px] ">100<img src="./assets/coin.png" alt="coin" class="w-6"></button>
 
@@ -62,7 +62,7 @@
 
          </section>
          <!-- emergency services section starts here -->
-          <section id="emergency-service-container"  class="  w-11/12 mx-auto grid-cols-1  grid lg:grid-cols-12 gap-8 py-10">
+          <section id="emergency-service-container"  class="  w-11/12 mx-auto grid-cols-1  grid lg:grid-cols-12 gap-8 py-12">
             <!-- emergency-services container -->
            <section id="emergency-services" class="col-span-1 lg:col-span-9 order-2 lg:order-1  ">
             <!-- emergency-services-card-box -->
@@ -71,7 +71,7 @@
             <div class=" bg-white rounded-xl p-8 shadow-sm">
                 <div class="flex justify-between items-center">
                     <img src="./assets/emergency.png" alt="emergency" class="w-9 bg-[#FFE3E2] p-2 rounded-lg">
-                    <img src="./assets/heart1.png" alt="heart" class="w-6">
+                    <img  src="./assets/heart1.png" alt="heart" class="w-6 cursor-pointer card-heart">
                 </div>
                 <div>
                     <h2 class="hind-madurai-font font-bold text-xl mt-3 ">National Emergency Number</h2>
@@ -89,7 +89,7 @@
             <div class=" bg-white rounded-xl p-8 shadow-sm">
                 <div class="flex justify-between items-center">
                     <img src="./assets/police.png" alt="police" class="w-9 bg-[#DFEFFF] p-2 rounded-lg">
-                    <img src="./assets/heart1.png" alt="heart" class="w-6">
+                    <img src="./assets/heart1.png" alt="heart" class="w-6 cursor-pointer card-heart">
                 </div>
             <div>
                     <h2 class="hind-madurai-font font-bold text-xl mt-3 ">Police Helpline Number</h2>
@@ -107,7 +107,7 @@
             <div class=" bg-white rounded-xl p-8 shadow-sm">
                 <div class="flex justify-between items-center">
                     <img src="./assets/fire-service.png" alt="fire-service" class="w-9 bg-[#FFE3E2] p-2 rounded-lg">
-                    <img src="./assets/heart1.png" alt="heart" class="w-6">
+                    <img src="./assets/heart1.png" alt="heart" class="w-6 cursor-pointer card-heart">
                 </div>
                <div>
                  <h2 class="hind-madurai-font font-bold text-xl mt-3 ">Fire Service Number</h2>
@@ -125,7 +125,7 @@
             <div class=" bg-white rounded-xl p-8 shadow-sm">
                 <div class="flex justify-between items-center">
                     <img src="./assets/ambulance.png" alt="ambulance" class="w-9 bg-[#FFE3E2] p-2 rounded-lg">
-                    <img src="./assets/heart1.png" alt="heart" class="w-6">
+                    <img src="./assets/heart1.png" alt="heart" class="w-6 cursor-pointer card-heart">
                 </div>
                 <div>
                     <h2 class="hind-madurai-font font-bold text-xl mt-3 ">Ambulance Service</h2>
@@ -143,7 +143,7 @@
             <div class=" bg-white rounded-xl p-8 shadow-sm">
                 <div class="flex justify-between items-center">
                     <img src="./assets/emergency.png" alt="emergency" class="w-9 bg-[#FFE3E2] p-2 rounded-lg">
-                    <img src="./assets/heart1.png" alt="heart" class="w-6">
+                    <img src="./assets/heart1.png" alt="heart" class="w-6 cursor-pointer card-heart">
                 </div>
                 <div>
                    <h2 class="hind-madurai-font font-bold text-xl mt-3 ">Women & Child Helpline</h2>
@@ -161,7 +161,7 @@
             <div class=" bg-white rounded-xl p-8 shadow-sm">
                 <div class="flex justify-between items-center">
                     <img src="./assets/emergency.png" alt="emergency" class="w-9 bg-[#FFE3E2] p-2 rounded-lg">
-                    <img src="./assets/heart1.png" alt="heart" class="w-6">
+                    <img src="./assets/heart1.png" alt="heart" class="w-6 cursor-pointer card-heart">
                 </div>
                 <div>
                     <h2 class="hind-madurai-font font-bold text-xl mt-3 ">Anti-Corruption Helpline</h2>
@@ -179,7 +179,7 @@
             <div class=" bg-white rounded-xl p-8 shadow-sm">
                 <div class="flex justify-between items-center">
                     <img src="./assets/emergency.png" alt="emergency" class="w-9 bg-[#FFE3E2] p-2 rounded-lg">
-                    <img src="./assets/heart1.png" alt="heart" class="w-6">
+                    <img src="./assets/heart1.png" alt="heart" class="w-6 cursor-pointer card-heart">
                 </div>
                 <div>
                     <h2 class="hind-madurai-font font-bold text-xl mt-3 ">Electricity Helpline</h2>
@@ -197,7 +197,7 @@
             <div class=" bg-white rounded-xl p-8 shadow-sm">
                 <div class="flex justify-between items-center">
                     <img src="./assets/brac.png" alt="brac" class="w-9 bg-[#FFE3E2] p-2 rounded-lg">
-                    <img src="./assets/heart1.png" alt="heart" class="w-6">
+                    <img src="./assets/heart1.png" alt="heart" class="w-6 cursor-pointer card-heart">
                 </div>
               <div>
                   <h2 class="hind-madurai-font font-bold text-xl mt-3 ">Brac Helpline</h2>
@@ -215,7 +215,7 @@
             <div class=" bg-white rounded-xl p-8 shadow-sm">
                 <div class="flex justify-between items-center">
                     <img src="./assets/Bangladesh-Railway.png" alt="Bangladesh-Railway" class="w-9 bg-[#FFE3E2] p-2 rounded-lg">
-                    <img src="./assets/heart1.png" alt="heart" class="w-6">
+                    <img src="./assets/heart1.png" alt="heart" class="w-6 cursor-pointer card-heart">
                 </div>
                 <div>
                     <h2 class="hind-madurai-font font-bold text-xl mt-3  ">Bangladesh Railway Helpline </h2>
@@ -249,5 +249,6 @@
 
 
     </main>
+    <script src="./script/index.js"></script>
 </body>
 </html>
