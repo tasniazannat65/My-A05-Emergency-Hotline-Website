@@ -26,7 +26,7 @@ getEmergencyServices('emergency-services').addEventListener('click', function(ev
         const date = new Date().toLocaleTimeString();
          let btnCoin = Number(getEmergencyServices('btn-coin').innerText);
       if(btnCoin >= 20){
-        alert(`Calling ${serviceName} ${serviceNumber}`);
+        alert(`📞Calling ${serviceName} ${serviceNumber}`);
         btnCoin = btnCoin - 20;
        getEmergencyServices('btn-coin').innerText = btnCoin;
         
@@ -59,6 +59,20 @@ document.getElementById('clear-btn').addEventListener('click', function(){
     callHistoryContainer.innerHTML = "";
 });
 
+// The functionality of clicking on the cards copy button, an alert message show which is including the hotline number then added copy number in copy navigation button----- 
+getEmergencyServices('emergency-services').addEventListener('click', function(event){
+    if(event.target.className.includes('copy-btn')){
+        const copyButton = event.target;
+        const copyNumber = copyButton.parentNode.parentNode.children[1].children[2].innerText;
+        navigator.clipboard.writeText(copyNumber);
+        alert(`The number has been copied: ${copyNumber}`);
+        let copyCount = getEmergencyServices('copy-count').innerText;
+        const copyIncrease = Number(copyCount) + 1;
+        getEmergencyServices('copy-count').innerText = copyIncrease;
+
+        
+    }
+});
 
 
 
