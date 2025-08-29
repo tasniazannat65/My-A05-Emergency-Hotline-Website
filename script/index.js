@@ -71,8 +71,11 @@ getEmergencyServices('emergency-services').addEventListener('click', function(ev
         getEmergencyServices('copy-count').innerText = copyIncrease;
 
         
-    }
+    };
 });
+
+
+
 
 
 
